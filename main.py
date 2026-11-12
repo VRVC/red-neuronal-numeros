@@ -47,3 +47,6 @@ modelo.fit(x_entrenamiento, y_entrenamiento, epochs=5)
 print("\n--- Evaluando con el examen final ---")
 perdida, precision = modelo.evaluate(x_prueba, y_prueba)
 print(f"\n¡Listo! La precisión de tu red neuronal es del: {precision * 100:.2f}%")
+
+modelo.save('modelo_numeros.keras')
+print("Modelo guardado exitosamente en 'modelo_numeros.keras'")
